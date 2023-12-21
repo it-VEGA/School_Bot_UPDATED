@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1051</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Посещаемость школы</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_11">
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="minimumSize">
+       <size>
+        <width>750</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>2000</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>2000</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>100</number>
+      </attribute>
+      <row/>
+      <column>
+       <property name="text">
+        <string>Класс</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ФИО</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Адрес</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Классный руководитель</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>5А</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>Иванова И</string>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string>г.Фергана Сакокий 16</string>
+       </property>
+      </item>
+      <item row="0" column="3">
+       <property name="text">
+        <string>Петрова Татьяна Александровна</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Ф.И.О</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="ADDFIO"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Адрес:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="ADDADRESS"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Класс.рук:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="TEACHER"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Класс:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="addClass">
+          <item>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1Е</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1Ж</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1З</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3Е</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4Е</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4Ж</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4З</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5Е</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5Ж</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5З</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8Е</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8Ж</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8З</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8И</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8К</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8Л</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9Е</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9Ж</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9К</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10Е</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11З</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ADDBUTTON">
+        <property name="font">
+         <font>
+          <family>Tahoma</family>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color:rgba(9, 132, 227,1.0);color:#fff;
+}
+QPushButton:hover:!pressed{
+border:3px solid black;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Добавить</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Класс:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="removeClass">
+          <item>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5Е</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6Е</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8В</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8Е</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8З</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9Е</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9Ж</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9И</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10Е</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11А</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11Б</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11Г</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11Д</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11Е</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Ученик:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="REMOVEFIO">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="REMOVEBUTTON">
+        <property name="font">
+         <font>
+          <family>Tahoma</family>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color:rgba(214, 48, 49,1.0);color:#fff;
+
+}
+QPushButton:hover:!pressed{
+border:3px solid black;
+}</string>
+        </property>
+        <property name="text">
+         <string>Удалить</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Из класса:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="outClass"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Ученик:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="DELETEFIO">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Перевести в класс:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="inClass"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="DELETEBUTTON">
+        <property name="font">
+         <font>
+          <family>Tahoma</family>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color:rgba(240, 147, 43,1.0);color:#fff;
+
+}
+QPushButton:hover:!pressed{
+border:3px solid black;
+}</string>
+        </property>
+        <property name="text">
+         <string>Перевести</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="styleSheet">
+         <string notr="true">font-size:18px;font-weight:bold</string>
+        </property>
+        <property name="text">
+         <string>ТУТ БУДЕТ КОЛ-ВО УЧЕНИКОВ</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1051</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action_Excel"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Excel">
+   <property name="text">
+    <string>Экспортировать в Excel</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
